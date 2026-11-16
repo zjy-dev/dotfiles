@@ -1,0 +1,8 @@
+dotfiles
+
+This repository includes a LazyVim starter configuration under nvim/. Its Apache
+License 2.0 text is retained at nvim/LICENSE.txt.
+The upstream LazyVim starter project is https://github.com/LazyVim/starter.
+
+External applications, plugins, and language toolchains installed separately are
+distributed by their respective upstream projects under their own licenses.

@@ -1,0 +1,30 @@
+layout {
+    // Keep zellij's standard chrome around every custom tab.
+    default_tab_template {
+        pane size=1 borderless=true {
+            plugin location="tab-bar"
+        }
+        children
+        pane size=1 borderless=true {
+            plugin location="status-bar"
+        }
+    }
+
+    tab name="ai" focus=true {
+        pane split_direction="vertical" {
+            pane command="opencode"
+            pane command="opencode" focus=true
+        }
+    }
+    tab name="edit" {
+        pane command="nvim" {
+            args "."
+        }
+    }
+    tab name="git" {
+        pane command="lazygit"
+    }
+    tab name="shell" {
+        pane
+    }
+}
